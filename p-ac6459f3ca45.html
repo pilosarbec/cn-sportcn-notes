@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>华体会访问检查清单 | 企业服务视角的资料整理</title>
+<meta name="description" content="围绕华体会整理的一份访问前检查清单，包含确认项、常见异常排查与正确链接说明，适合企业服务场景下快速核对。">
+<style>
+:root{
+  --bg:#f6f7f9;
+  --card:#ffffff;
+  --border:#e3e6ea;
+  --text:#2b2f36;
+  --muted:#6b7280;
+  --accent:#2f7d54;
+  --accent-soft:#eef6f1;
+  --warn:#9a5b00;
+  --warn-soft:#fdf4e7;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.7;
+  padding:24px 16px;
+}
+.wrap{max-width:880px;margin:0 auto}
+header.page{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:28px 26px;
+  margin-bottom:18px;
+}
+.tag{
+  display:inline-block;
+  font-size:12px;
+  color:var(--accent);
+  background:var(--accent-soft);
+  border:1px solid #d4e7dc;
+  border-radius:999px;
+  padding:3px 12px;
+  margin-bottom:14px;
+  letter-spacing:.3px;
+}
+h1{
+  font-size:25px;
+  line-height:1.4;
+  margin-bottom:12px;
+  font-weight:700;
+}
+.lead{
+  font-size:15px;
+  color:var(--muted);
+  border-left:3px solid var(--accent);
+  padding-left:12px;
+}
+section{
+  background:var(--card);
+  border:1px solid var(--border);
+  border-radius:12px;
+  padding:24px 26px;
+  margin-bottom:18px;
+}
+h2{
+  font-size:18px;
+  margin-bottom:14px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+h2 .num{
+  font-size:13px;
+  color:#fff;
+  background:var(--accent);
+  border-radius:6px;
+  width:24px;height:24px;
+  display:inline-flex;
+  align-items:center;justify-content:center;
+  flex:none;
+}
+p{margin-bottom:10px}
+.check{list-style:none;display:grid;gap:10px}
+.check li{
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:12px 14px 12px 40px;
+  position:relative;
+  font-size:14.5px;
+}
+.check li::before{
+  content:"✓";
+  position:absolute;
+  left:14px;top:12px;
+  color:var(--accent);
+  font-weight:700;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:14px;
+}
+.cell{
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:14px 16px;
+}
+.cell h3{font-size:15px;margin-bottom:6px}
+.cell p{font-size:14px;color:var(--muted);margin:0}
+.links{
+  display:grid;
+  gap:10px;
+}
+.links a{
+  display:inline-block;
+  color:var(--accent);
+  text-decoration:none;
+  word-break:break-all;
+}
+.links a:hover{text-decoration:underline}
+.linkrow{
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:12px 14px;
+  font-size:14px;
+}
+.linkrow span{display:block;color:var(--muted);font-size:12.5px;margin-bottom:4px}
+.warn{
+  background:var(--warn-soft);
+  border:1px solid #f0dcb8;
+}
+.warn h2 .num{background:var(--warn)}
+.warn ul{padding-left:20px}
+.warn li{margin-bottom:6px;font-size:14.5px}
+.faq dt{font-weight:600;margin-top:14px}
+.faq dt:first-child{margin-top:0}
+.faq dd{color:var(--muted);font-size:14.5px}
+footer{
+  font-size:13px;
+  color:var(--muted);
+  text-align:center;
+  padding:18px 10px;
+}
+.note{
+  font-size:13px;
+  color:var(--muted);
+  border-top:1px dashed var(--border);
+  padding-top:14px;
+  margin-top:6px;
+}
+@media(max-width:600px){
+  .grid{grid-template-columns:1fr}
+  h1{font-size:21px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="page">
+  <span class="tag">企业服务 · 访问资料 · 编号 3870</span>
+  <h1>华体会访问前检查清单：确认项、常见异常与正确链接</h1>
+  <p class="lead">一句话摘要：这是一份围绕 华体会 整理的访问核对资料，帮你在打开页面前确认地址是否正确，遇到打不开或显示异常时知道从哪里排查。</p>
+</header>
+
+<section>
+  <h2><span class="num">1</span>访问前确认项</h2>
+  <p>很多访问问题其实出在地址或环境上，而不是页面本身。建议按下面几条逐项核对，再决定是否继续。</p>
+  <ul class="check">
+    <li>确认地址栏拼写完整，域名为 cn-sportcn-hth.com.cn，没有多余字符或错位字母。</li>
+    <li>确认使用的是完整 https 链接，而不是从聊天记录复制的截断地址。</li>
+    <li>确认当前网络环境正常，可先打开其他常用网站测试连通性。</li>
+    <li>确认浏览器为较新版本，过旧版本可能无法正确渲染页面样式。</li>
+    <li>如果是企业内网访问，确认本地代理或白名单策略没有拦截该域名。</li>
+  </ul>
+</section>
+
+<section>
+  <h2><span class="num">2</span>常见异常与排查方向</h2>
+  <p>下面把常见的几类情况分开列出，方便对照自己遇到的现象，缩小排查范围。</p>
+  <div class="grid">
+    <div class="cell">
+      <h3>页面打不开</h3>
+      <p>多与网络、DNS 缓存或地址错误有关。可尝试更换网络、清理浏览器缓存后重新输入完整地址。</p>
+    </div>
+    <div class="cell">
+      <h3>样式错乱</h3>
+      <p>常见于浏览器缓存了旧版本资源，强制刷新或在隐私窗口重新打开通常可恢复。</p>
+    </div>
+    <div class="cell">
+      <h3>跳转到陌生地址</h3>
+      <p>说明你点开的可能不是原始地址。回到本页核对域名后再访问更稳妥。</p>
+    </div>
+    <div class="cell">
+      <h3>企业设备受限</h3>
+      <p>部分企业服务环境会统一管理可访问站点，遇到拦截时可咨询本单位 IT 管理人员。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2><span class="num">3</span>正确链接区域</h2>
+  <p>为避免误点错误地址，这里集中列出可直接核对的链接。请以完整 https URL 为准。</p>
+  <div class="links">
+    <div class="linkrow">
+      <span>品牌词入口</span>
+      <a href="https://cn-sportcn-hth.com.cn">华体会</a>
+    </div>
+    <div class="linkrow">
+      <span>完整地址（可直接核对）</span>
+      <a href="https://cn-sportcn-hth.com.cn">https://cn-sportcn-hth.com.cn</a>
+    </div>
+    <div class="linkrow">
+      <span>相关说明参考</span>
+      <a href="https://cn-sportcn-hth.com.cn">查看 华体会 的相关说明</a>
+    </div>
+    <div class="linkrow">
+      <span>企业服务角度资料</span>
+      <a href="https://cn-sportcn-hth.com.cn">企业服务 资料参考</a>
+    </div>
+  </div>
+</section>
+
+<section class="warn">
+  <h2><span class="num">!</span>风险提示</h2>
+  <ul>
+    <li>访问任何站点前，请自行确认域名拼写与来源，避免点击来路不明的相似地址。</li>
+    <li>本页为信息整理性质，不代表任何官方立场，也不承诺访问结果。</li>
+    <li>在企业服务场景下处理账号或资料时，请遵守所在单位的合规与安全规定。</li>
+    <li>如对内容真实性存疑，建议结合多方信息独立判断后再操作。</li>
+  </ul>
+</section>
+
+<section class="faq">
+  <h2><span class="num">4</span>常见问题</h2>
+  <dl>
+    <dt>这份清单适合什么时候用？</dt>
+    <dd>当你准备访问 华体会 相关页面，但不确定地址是否正确，或者遇到打不开、跳转异常时，可以按清单逐项核对。</dd>
+    <dt>为什么强调用完整 URL？</dt>
+    <dd>裸域名在不同环境下可能被解析或补全为不同地址，使用完整 https 链接更能减少误访问。</dd>
+    <dt>页面打不开一定是地址问题吗？</dt>
+    <dd>不一定。网络、缓存、浏览器版本、企业内网策略都可能影响访问，建议按第二节分类逐一排查。</dd>
+  </dl>
+</section>
+
+<section>
+  <h2><span class="num">5</span>页面备注</h2>
+  <p class="note">
+    资料说明：本页内容由人工整理，面向有访问核对需求的用户，从企业服务的使用习惯出发组织信息。<br>
+    更新时间：2025 年。链接与说明如有调整，请以实际访问到的页面为准。资料编号 3870，仅作整理参考。
+  </p>
+</section>
+
+<footer>
+  本页为信息整理页面 · 域名 cn-sportcn-hth.com.cn · 内容仅供参考
+</footer>
+
+</div>
+</body>
+</html>
